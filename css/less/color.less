@@ -1,0 +1,50 @@
+@body-color: #fff;
+@body-text: #333;
+@body-link: #a00;
+@body-hover: #f00;
+
+@header-color: #ccc;
+@header-text: #000;
+@header-link: #0aa;
+@header-hover: #0cc;
+
+@footer-color: #000;
+@footer-text: #eee;
+@footer-link: #fff;
+@footer-hover: #fff;
+
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+body {
+	background-color: @body-color;
+	color: @header-text;
+	a:link, a:visited {
+		color: @body-link;
+	}
+	a:hover, a:active {
+		color: @body-hover;
+	}
+}
+
+header {
+	background-color: @header-color;
+	color: @header-text;
+	a:link, a:visited {
+		color: @header-link;
+	}
+	a:hover, a:active {
+		color: @header-hover;
+	}
+}
+
+footer {
+	background-color: @footer-color;
+	color: @footer-text;
+	a:link, a:visited {
+		color: @footer-link;
+	}
+	a:hover, a:active {
+		color: @footer-hover;
+	}
+}
